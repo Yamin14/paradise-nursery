@@ -1,0 +1,92 @@
+
+#landing-page-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("/landing-page-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.3;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+#landing-page-body {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+}
+
+#content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#lp-heading {
+    font-size: x-large;
+}
+
+#line {
+    width: 30px;
+    border-bottom: 2px solid white;
+    margin: 0 auto;
+}
+
+#paras {
+    max-width: 300px;
+    margin: 20px 0;
+}
+
+.intro-para {
+    text-align: center;
+    font-size: medium;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+@media screen and (min-width: 480px) {
+
+    #landing-page-body {
+        height: 100vh;
+    }
+
+    #content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #lp-heading {
+        font-size: xx-large;
+    }
+
+    #paras {
+        max-width: 500px;
+        font-size: large;
+    }
+    
+    .intro-para {
+        text-align: left;
+        font-size: large;
+    }
+    
+}
+
+@media (prefers-color-scheme: light) {
+    #line {
+        border-bottom: 2px solid #021525;
+    }
+
+    #landing-page-bg {
+        opacity: 0.6;
+    }
+}

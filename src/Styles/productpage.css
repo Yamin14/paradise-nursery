@@ -1,0 +1,108 @@
+
+.line {
+    width: 60px;
+    border-bottom: 2px solid white;
+    margin: 0 auto;
+}
+
+.categorySection {
+    width: 100vw;
+    margin: 20px 0;
+    margin-bottom: 40px;
+}
+
+.categoryHeading {
+    padding: 0;
+    margin: 20px;
+}
+
+.categoryHeading h1 {
+    margin: 5px;
+    font-size: x-large;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    place-items: center;
+    row-gap: 20px;
+    z-index: -1;
+}
+
+/* Plant Card */
+.plantCard {
+    border: 3px solid white;
+    width: 70%;
+    height: 450px;
+    position: relative;
+    background-color: white;
+    color: black;
+    z-index: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+}
+
+.plantCard img {
+    width: auto;
+    max-width: 80%;
+    height: 250px;
+}
+
+.price {
+    color: red;
+    margin: 0;
+}
+
+.plantCard p {
+    margin: 0;
+}
+
+.addToCartBtn {
+    background-color: green;
+    color: white;
+    margin: 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.addToCartBtn:disabled {
+    background-color: grey;
+    cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 20px;
+        justify-content: center;
+    }
+
+    .plantCard {
+        width: unset;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(4, 20%);
+        column-gap: 40px;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .line {
+        border: 2px solid #021525;
+    }
+}

@@ -1,0 +1,126 @@
+
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+#navbar * {
+    font-size: 10px;
+}
+
+#logo {
+    width: 25px;
+    height: 25px;
+    margin: 10px 7px;
+}
+
+#navHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+#navHead h1, #navHead p{
+    margin: 0;
+    padding: 0;
+}
+
+#navHead p {
+    font-size: 8px;
+}
+
+#title {
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+#cartBtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+#cartLogo {
+    width: 40px;
+    height: 40px;
+}
+
+#noCartItems {
+    font-size: 20px;
+    position: absolute;
+}
+
+@media screen and (min-width: 600px) {
+    #navbar * {
+        font-size: 20px;
+    }
+
+    #logo {
+        width: 40px;
+        height: 40px;
+        margin: 15px 10px;
+    }
+
+    #navHead p {
+        font-size: 12px;
+    }
+
+    #title {
+        font-size: 25px;
+    }
+
+    #cartLogo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #noCartItems {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #navbar * {
+        font-size: 25px;
+    }
+
+    #navHead {
+        flex: 2;
+    }
+
+    #logo {
+        width: 50px;
+        height: 50px;
+        margin: 15px 15px;
+    }
+
+    #navHead p {
+        font-size: 15px;
+    }
+
+    #cartLogo {
+        width: 60px;
+        height: 60px;
+    }
+
+    #noCartItems {
+        font-size: 30px;
+    }
+}
