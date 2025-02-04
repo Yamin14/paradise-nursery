@@ -1,8 +1,12 @@
 import { nanoid } from "nanoid";
 import { useCartStore } from "../store/store"
 import '../Styles/cart.css';
+import { useNavigate } from "react-router";
 
 const CartPage = () => {
+
+  //back button
+  const nav = useNavigate();
 
   //cart
   const cart = useCartStore(state => state.cartItems);
@@ -19,6 +23,8 @@ const CartPage = () => {
   //return
   return (
     <div id="cart">
+      <button id="backBtn" onClick={() => nav('/product-page')}>Back</button>
+
       <h1 id="cartTitle">Cart</h1>
       <div className="line"></div>
 

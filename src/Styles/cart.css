@@ -1,4 +1,13 @@
 
+#backBtn {
+    padding: 5px 20px;
+    color: white;
+    background-color: green;
+    font-size: large;
+    position: absolute;
+    left: 20px;
+}
+
 #cart {
     border: 3px solid white;
     margin: 0 auto;
